@@ -1,0 +1,45 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  padding: 10px;
+}
+
+.fila{
+   margin-bottom: 20px;
+}
+.box{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.box .discount{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: green;
+}
+
+.box:nth-child(2n) .discount{
+   background-color: red;
+}
+.box .heart{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  display: none;
+  color: red;
+}
+
+.box:hover .heart {
+  display: block;
+}
